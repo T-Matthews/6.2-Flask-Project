@@ -1,0 +1,33 @@
+{% extends 'layout.html' %}
+
+{% block title %}
+Lists!
+{% endblock title %}
+
+
+{% block jumbotrontitle %}
+The Cities and Currencies of the Future!!
+{% endblock jumbotrontitle %}
+
+{% block jumbotron %}
+As described on the home page, the world has given in to the allure of cryptos! See all places and (hopefully I can get sorted before morning) coins available
+Let's Poke-explain what coins are used across the regions!
+
+{% endblock jumbotron %}
+
+{% block content %}
+<h1>OUR CITIES</h1>
+<div>
+<ol>
+{% for city in cities %}
+    <li>{{ city }}</li>
+    {% endfor %}
+</ol>
+
+<ol> 
+    {% for key, value in crypto %}
+    <li>{{ key }}</li>
+    {% endfor %}
+</ol>
+</div>
+{% endblock content %}

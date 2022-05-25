@@ -1,0 +1,50 @@
+body{
+background-color: rgb(162, 162, 162);
+
+}
+#jumbotron {
+    background-color: rgb(86, 0, 86);
+    color: white;
+    border-bottom: 3px solid yellow;
+    border-top: 2px solid yellow;
+}
+.regions {
+    margin: auto;
+    background-color: rgb(254, 140, 0);
+
+}
+
+.index-row{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    padding-top: 5vh;
+}
+
+.slideshow{
+    max-height: 70vh;
+
+}
+#clickbait{
+    display: flex;
+    justify-content: center;
+}
+.carousel_img{
+    max-height: 60vh;
+}
+.img_text {
+    color: rgb(98, 255, 0);
+}
+
+.bitkachu {
+   padding-top: 5vh;
+padding-left: 15vh;
+
+}
+
+.jtron2{
+    margin-left: 12vh;
+    margin-right: 12vh;
+    margin-top: 5vh;
+}
