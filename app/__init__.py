@@ -2,6 +2,7 @@ from flask import Flask, render_template
 from config import Config
 #any new blueprint needs an import
 from .auth.routes import auth
+from .api.routes import api
 #imports for database stuff. Need ORM, and flask migrate (version control) connected
 from .models import db,login
 from flask_migrate import Migrate
@@ -17,7 +18,7 @@ app.config.from_object(Config)
 
 
 app.register_blueprint(auth) #This line links the app and the blueprint auth
-
+app.register_blueprint(api)
 #setup orm and migrate communication with app and eachother
 db.init_app(app) #allows for updating database info
 migrate = Migrate(app,db)#allows for updating of database structure - new tables,etc.

@@ -6,8 +6,8 @@
 
 # import the things we need
 from app import app
-from app.models import db,Animal,User
+from app.models import Swans, db,Animal,User,Post
 #create the shell context processor
 @app.shell_context_processor
 def shell_context():
-    return {'db':db,'Animal':Animal, 'User':User}
+    return {'db':db,'Animal':Animal, 'User':User, 'Post':Post,'Swans':Swans}
